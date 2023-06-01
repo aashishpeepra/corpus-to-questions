@@ -3,16 +3,16 @@ Take corpus and generates mcq questions
 
 ## How to run
 
-1. Create a virtual env
+1. Create a virtual env -> 
   python -m venv env
   
-2. once the env is created activate it
+2. once the env is created activate it -> 
   cd ./env/Scripts; ./activate; cd ../../
 
-3. Once activated, install this package
+3. Once activated, install this package ( run the command ) -> 
   pip install git+https://github.com/boudinfl/pke.git
 
-4. Once the above package is installed the run
+4. Once the above package is installed the run -> 
   pip install -r requirements.txt
  
 5. Once all the requirements are installed
