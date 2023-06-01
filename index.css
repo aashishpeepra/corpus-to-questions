@@ -58,7 +58,15 @@ ol{
   margin-bottom: 2rem;
 }
 
+ol span{
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+}
+
 li{
   text-align: left;
   margin-left: 0px;
+}
+.summary{
+  margin-bottom: 4rem;
 }

@@ -23,13 +23,13 @@ window.onload = function () {
           elem.innerText = JSON.stringify(data, null, 4);
           elem.style.display = "block";
           document.getElementById("btn").innerText = "UPLOAD FILE";
-          formList(data);
+          formList(data.questions, data.summary);
         }
       });
   });
 };
 
-function formList(data) {
+function formList(data, summary) {
   let node = document.createElement("ol");
   node.type = "1";
   for (let i = 0; i < data.length; i++) {
@@ -43,8 +43,20 @@ function formList(data) {
       li.innerText = data[i].choices[j]["choice"];
       node2.appendChild(li);
     }
+
     node.appendChild(node2);
+    const rightchoice = document.createElement("span");
+    rightchoice.innerText =
+      "Right Choice: " +
+      data[i].choices.filter((eachChoice) => eachChoice.isCorrect)[0]?.index;
+    node.appendChild(rightchoice);
   }
+  console.log(data, summary);
   document.getElementById("result").innerText = "";
+  let summaryBlock = document.createElement("div");
+  summaryBlock.classList.add("summary");
+  summaryBlock.innerText = summary;
+  const result = document.getElementById("result");
+  result.appendChild(summaryBlock);
   document.getElementById("result").appendChild(node);
 }
