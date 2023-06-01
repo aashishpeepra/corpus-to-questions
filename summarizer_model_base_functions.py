@@ -1,6 +1,6 @@
 import nltk
-# nltk.download('stopwords')
-# nltk.download('popular')
+nltk.download('stopwords')
+nltk.download('popular')
 
 from textwrap3 import wrap
 from summarizer import Summarizer
