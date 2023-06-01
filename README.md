@@ -15,7 +15,9 @@ Take corpus and generates mcq questions
 4. Once the above package is installed the run -> 
   pip install -r requirements.txt
  
-5. Once all the requirements are installed
+5. Once all the requirements are installed then run -> python main.py
+
+6. Then once the server starts -> 
   double click on index.html and use it
 
 6. After 2-3 uses, comments line 2 and 3 inside the file summarizer_model_base_functions.py
