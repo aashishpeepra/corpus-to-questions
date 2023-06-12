@@ -1,4 +1,5 @@
 # corpus-to-questions
+REST API that takes a text file as an input. The API then returns the summary and related MCQs ( multiple choice questions ) based on the content of the file.
 Take corpus and generates mcq questions
 
 ## How to run
