@@ -28,3 +28,7 @@ Take corpus and generates mcq questions
 
 There's one layer of cache on top of API abstraction. Means the first time the API will be slow but when the same file is uploaded second time, the API response will be JIT.
 For demonstration try to have 3-4 text files saved locally and use them 2-3 times. The server will be ready to show
+
+## Important
+
+Also remember that it mostly works on python 3.10 and above
